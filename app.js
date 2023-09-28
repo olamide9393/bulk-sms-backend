@@ -4,13 +4,13 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 const app = express();
-const corsOptions = {
-  origin: "https://bulk-sms-23yv.onrender.com",
-};
+// const corsOptions = {
+//   origin: "https://bulk-sms-23yv.onrender.com",
+// };
 // middleware
 
 app.use(express.json());
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 
